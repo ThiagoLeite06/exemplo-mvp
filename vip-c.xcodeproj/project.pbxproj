@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		373F25A32A69FE1E0009F1AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25A22A69FE1E0009F1AA /* AppDelegate.swift */; };
 		373F25A52A69FE1E0009F1AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25A42A69FE1E0009F1AA /* SceneDelegate.swift */; };
-		373F25A72A69FE1E0009F1AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25A62A69FE1E0009F1AA /* ViewController.swift */; };
+		373F25A72A69FE1E0009F1AA /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25A62A69FE1E0009F1AA /* UsersViewController.swift */; };
 		373F25AA2A69FE1E0009F1AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373F25A82A69FE1E0009F1AA /* Main.storyboard */; };
 		373F25AC2A69FE1F0009F1AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373F25AB2A69FE1F0009F1AA /* Assets.xcassets */; };
 		373F25AF2A69FE1F0009F1AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373F25AD2A69FE1F0009F1AA /* LaunchScreen.storyboard */; };
 		373F25BA2A69FE1F0009F1AA /* vip_cTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25B92A69FE1F0009F1AA /* vip_cTests.swift */; };
 		373F25C42A69FE1F0009F1AA /* vip_cUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25C32A69FE1F0009F1AA /* vip_cUITests.swift */; };
 		373F25C62A69FE1F0009F1AA /* vip_cUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25C52A69FE1F0009F1AA /* vip_cUITestsLaunchTests.swift */; };
+		373F25D92A6A02D60009F1AA /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25D82A6A02D60009F1AA /* Presenter.swift */; };
+		373F25DB2A6A033F0009F1AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F25DA2A6A033F0009F1AA /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		373F259F2A69FE1E0009F1AA /* vip-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vip-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		373F25A22A69FE1E0009F1AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		373F25A42A69FE1E0009F1AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		373F25A62A69FE1E0009F1AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		373F25A62A69FE1E0009F1AA /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		373F25A92A69FE1E0009F1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		373F25AB2A69FE1F0009F1AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		373F25AE2A69FE1F0009F1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		373F25BF2A69FE1F0009F1AA /* vip-cUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vip-cUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		373F25C32A69FE1F0009F1AA /* vip_cUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vip_cUITests.swift; sourceTree = "<group>"; };
 		373F25C52A69FE1F0009F1AA /* vip_cUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vip_cUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		373F25D82A6A02D60009F1AA /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		373F25DA2A6A033F0009F1AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,9 @@
 		373F25A12A69FE1E0009F1AA /* vip-c */ = {
 			isa = PBXGroup;
 			children = (
+				373F25D22A6A02420009F1AA /* MVP */,
 				373F25A22A69FE1E0009F1AA /* AppDelegate.swift */,
 				373F25A42A69FE1E0009F1AA /* SceneDelegate.swift */,
-				373F25A62A69FE1E0009F1AA /* ViewController.swift */,
 				373F25A82A69FE1E0009F1AA /* Main.storyboard */,
 				373F25AB2A69FE1F0009F1AA /* Assets.xcassets */,
 				373F25AD2A69FE1F0009F1AA /* LaunchScreen.storyboard */,
@@ -125,6 +129,40 @@
 				373F25C52A69FE1F0009F1AA /* vip_cUITestsLaunchTests.swift */,
 			);
 			path = "vip-cUITests";
+			sourceTree = "<group>";
+		};
+		373F25D22A6A02420009F1AA /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				373F25D52A6A02880009F1AA /* Presenter */,
+				373F25D42A6A025F0009F1AA /* View */,
+				373F25D32A6A02540009F1AA /* Model */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		373F25D32A6A02540009F1AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				373F25DA2A6A033F0009F1AA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		373F25D42A6A025F0009F1AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				373F25A62A69FE1E0009F1AA /* UsersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		373F25D52A6A02880009F1AA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				373F25D82A6A02D60009F1AA /* Presenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				373F25A72A69FE1E0009F1AA /* ViewController.swift in Sources */,
+				373F25A72A69FE1E0009F1AA /* UsersViewController.swift in Sources */,
 				373F25A32A69FE1E0009F1AA /* AppDelegate.swift in Sources */,
+				373F25D92A6A02D60009F1AA /* Presenter.swift in Sources */,
+				373F25DB2A6A033F0009F1AA /* User.swift in Sources */,
 				373F25A52A69FE1E0009F1AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
